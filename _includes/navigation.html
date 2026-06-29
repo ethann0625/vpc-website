@@ -1,0 +1,12 @@
+<header>
+<nav id="top-nav">
+    <a id="title" href="/">Volunteer Performers' Collective</a>
+
+    <div id="nav-element-container">
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+      {% include theme_toggle.html %}
+  </div>
+</nav>
+</header>

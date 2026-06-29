@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+      <script src="assets/js/theme_toggle.js" defer></script>
+      <script>
+          const theme = localStorage.getItem("theme");
+          if (theme) document.documentELement.setAttribute("data-theme", theme);
+      </script>
+    <meta charset="utf-8">
+    <link rel="stylesheet", href="/assets/css/styles.css">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+        {% include navigation.html %}
+      <div id="content-container">
+        {{ content }}
+      </div>
+  </body>
+</html>
