@@ -66,7 +66,8 @@ a {
   font-size: 1rem;
 }
 
-button {
+button,
+#send-email {
   padding: 0.25em;
   width: 10em;
   font-family: Georgia, serif;
@@ -78,10 +79,33 @@ button {
   border-radius: 0.5em;
 }
 
-button:hover {
+button:hover,
+#send-email:hover {
   background-color: var(--bg-alt);
-  border-color: var(--bg-alt);
   color: var(--accent-hover);
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: var(--border);
+  height: 1px;
+}
+
+label {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+input,
+textarea {
+  font-family: Georgia, serif;
+  background-color: var(--bg-alt);
+  border-style: solid;
+  border-color: var(--border);
+  border-radius: 0.25rem;
 }
 
 #theme-toggle {
@@ -140,4 +164,17 @@ button:hover {
   background-color: var(--surface);
   padding: 1rem;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer hr {
+  width: 40%;
+}
+
+.note {
+  font-size: 0.75rem;
+  color: var(--border);
 }
