@@ -1,3 +1,37 @@
+#top-nav {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  margin: 0;
+  font-size: 100%;
+  width: 100%;
+  padding: 1rem 2rem 1rem 2rem;
+
+  background-color: var(--surface);
+}
+
+#nav-element-container {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 0.5rem;
+}
+
+#site-title {
+  color: var(--fg);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#site-title:hover {
+  background-color: transparent;
+  color: var(--accent-hover);
+}
+
 .quick-link {
   display: block;
   position: relative;
@@ -43,38 +77,4 @@
 
 .quick-link.current span:hover {
   color: var(--surface);
-}
-
-#top-nav {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-
-  margin: 0;
-  font-size: 100%;
-  width: 100%;
-  padding: 12px 20px;
-
-  background-color: var(--surface);
-}
-
-#nav-element-container {
-  display: flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 0.5rem;
-}
-
-#site-title {
-  color: var(--fg);
-  font-weight: bold;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-#site-title:hover {
-  background-color: transparent;
-  color: var(--accent-hover);
 }
