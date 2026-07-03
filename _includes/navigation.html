@@ -1,12 +1,17 @@
 <header>
 <nav id="top-nav">
-    <a id="title" href="/">Volunteer Performers' Collective</a>
+    <a id="site-title" href="/">Org Name</a>
 
     <div id="nav-element-container">
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+  <a
+    href="{{ item.link }}"
+    class="quick-link{% if page.url == item.link %} current{% endif %}"
+  >
+  <span>{{ item.name }}</span>
+  </a>
   {% endfor %}
-      {% include theme_toggle.html %}
+{% include theme_toggle.html %}</div>
   </div>
 </nav>
 </header>

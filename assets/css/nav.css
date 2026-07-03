@@ -1,0 +1,80 @@
+.quick-link {
+  display: block;
+  position: relative;
+  padding: 0.5rem;
+  color: var(--fg-alt);
+  font-weight: bold;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.quick-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 0;
+  width: 100%;
+
+  background: var(--accent-hover);
+  transition: height 0.25s ease;
+  z-index: 0;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.quick-link:hover::after {
+  height: 100%;
+}
+
+.quick-link span {
+  position: relative;
+  z-index: 1;
+  color: var(--fg-alt);
+}
+
+.quick-link:hover span {
+  color: var(--surface);
+}
+
+.quick-link.current span {
+  color: var(--accent);
+}
+
+.quick-link.current span:hover {
+  color: var(--surface);
+}
+
+#top-nav {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  margin: 0;
+  font-size: 100%;
+  width: 100%;
+  padding: 12px 20px;
+
+  background-color: var(--surface);
+}
+
+#nav-element-container {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 0.5rem;
+}
+
+#site-title {
+  color: var(--fg);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#site-title:hover {
+  background-color: transparent;
+  color: var(--accent-hover);
+}

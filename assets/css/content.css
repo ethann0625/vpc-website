@@ -1,0 +1,19 @@
+#content-container {
+  background-color: var(--surface);
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer hr {
+  width: 40%;
+}
+
+.note p,
+.note a {
+  font-size: 0.75rem;
+  color: var(--border);
+}

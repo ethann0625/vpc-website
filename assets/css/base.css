@@ -1,0 +1,52 @@
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: Georgia, serif;
+
+  gap: 1rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+button {
+  font-family: Georgia, serif;
+
+  background-color: var(--surface);
+  color: None;
+  border-style: None;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: var(--border);
+  height: 1px;
+}
+
+p {
+  color: var(--fg-alt);
+}
+
+textarea {
+  background-color: var(--bg-alt);
+  border-style: solid;
+  border-color: var(--border);
+  color: var(--fg-alt);
+  font-family: Georgia, serif;
+  width: 70%;
+  height: 12rem;
+}
+
+.accent {
+  color: var(--accent);
+}
