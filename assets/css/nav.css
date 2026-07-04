@@ -21,18 +21,25 @@
 }
 
 #site-title {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
   color: var(--fg);
   font-weight: bold;
   font-size: 1.5rem;
   text-decoration: none;
+  border-left: 3px solid var(--accent);
+  padding-left: 0.5rem;
 }
 
 #site-title:hover {
   background-color: transparent;
   color: var(--accent-hover);
+  border-left: 2px solid var(--fg-alt);
 }
 
 .quick-link {
+  font-family: "Fraunces", serif;
+  font-size: 1.1rem;
   display: block;
   position: relative;
   padding: 0.5rem;
