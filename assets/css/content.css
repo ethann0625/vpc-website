@@ -1,10 +1,4 @@
-#site-title-container {
-  position: relative;
-  background-color: var(--surface);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-}
-
-#content-container {
+.content-container {
   position: relative;
   background-color: var(--surface);
   padding: 1rem 2rem 1rem 2rem;
@@ -23,4 +17,29 @@
 .note a {
   font-size: 0.75rem;
   color: var(--border);
+}
+
+#image-hero {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  aspect-ratio: 16 / 6;
+  max-height: 40vh;
+  overflow: hidden;
+}
+
+#image-hero .hero-title-container {
+  max-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#image-hero img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
 }
