@@ -79,7 +79,8 @@
 }
 
 .quick-link {
-  font-family: "Fraunces", serif;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1.5px;
   font-size: 1.1rem;
   display: block;
   position: relative;
