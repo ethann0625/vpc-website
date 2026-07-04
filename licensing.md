@@ -5,9 +5,8 @@ title: Licensing
 
 # Third-party Licenses
 
-Icons:
-{% include icons/sun.svg %}
-{% include icons/moon.svg %}
+## Icons (Theme Icons, Background Icons):
+
 Copyright © 2026 Lucide Icons - Licensed under the ISC License.
 
 Note that some minor (theming) modifications were made to make these icons more consistent with the

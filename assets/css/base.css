@@ -1,5 +1,6 @@
 body {
   background-color: var(--bg);
+
   color: var(--fg);
   font-family: Georgia, serif;
 
@@ -9,6 +10,18 @@ body {
 
   display: flex;
   flex-direction: column;
+}
+
+#bg-pattern {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  color: var(--bg-alt);
+}
+
+.reduced-motion#bg-pattern svg {
+  width: 100%;
+  height: 100%;
 }
 
 a {
