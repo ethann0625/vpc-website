@@ -47,7 +47,26 @@ hr {
 }
 
 p {
+  font-family: Georgia, serif;
   color: var(--fg-alt);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", serif;
+  color: var(--fg);
+  padding-left: 0.5rem;
+  border-left: 2px solid var(--border);
+}
+
+h2 {
+  border-left: 3px solid var(--border);
+}
+
+h1 {
+  border-left: 3px solid var(--accent);
 }
 
 textarea {
