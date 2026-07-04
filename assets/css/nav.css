@@ -21,22 +21,64 @@
 }
 
 #site-title {
+  position: relative;
+  padding: 0.2rem 0.5rem 0.2rem calc(0.5rem + 3px);
+  text-decoration: none;
+  transition: border-left-color 0.25s ease;
+}
+
+#site-title:hover {
+  border-left-color: transparent;
+}
+
+#site-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--accent);
+  transform-origin: top;
+  transition: transform 0.25s ease;
+}
+
+#site-title:hover::before {
+  transform: scaleY(0);
+}
+
+#site-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 0;
+  height: 3px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+  border-left: 0;
+}
+
+#site-title:hover::after {
+  width: 100%;
+}
+
+#site-title span {
+  position: relative;
+  z-index: 1;
+  color: var(--fg);
   font-family: "Fraunces", serif;
   font-size: 1.5rem;
   color: var(--fg);
   font-weight: bold;
   font-size: 1.5rem;
   text-decoration: none;
-  border-left: 3px solid var(--accent);
-  padding-left: 0.5rem;
 }
 
-#site-title:hover {
-  background-color: transparent;
+#site-title:hover span {
   color: var(--accent-hover);
-  border-left: 3px solid var(--accent-hover);
 }
-
 .quick-link {
   font-family: "Fraunces", serif;
   font-size: 1.1rem;

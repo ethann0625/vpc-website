@@ -15,12 +15,6 @@
           </svg>
         </g>
 
-        <g transform="translate(50,50)">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music3-icon lucide-music-3">
-            <circle cx="12" cy="18" r="4" />
-            <path d="M16 18V2" />
-          </svg>
-        </g>
 
         <g transform="translate(0,50)">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music4-icon lucide-music-4">
@@ -31,14 +25,23 @@
           </svg>
         </g>
 
-        <g transform="translate(50,0)">
+        <g transform="translate(50,10)">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music-icon lucide-music">
             <path d="M9 18V5l12-2v13" />
             <circle cx="6" cy="18" r="3" />
             <circle cx="18" cy="16" r="3" />
           </svg>
         </g>
+
+        <g transform="translate(50,60)">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music3-icon lucide-music-3">
+            <circle cx="12" cy="18" r="4" />
+            <path d="M16 18V2" />
+          </svg>
+        </g>
+
       </svg>
+
     </pattern>
   </defs>
   <rect width="100%" height="100%" fill="url(#bg-tile)" />
