@@ -12,6 +12,8 @@
   --accent: #7a4a2d;
   --accent-hover: #5f3721;
   --accent-soft: #f0e0d2;
+
+  --transition: 0.25s ease;
 }
 
 :root[data-theme="dark"] {
@@ -27,6 +29,7 @@
   --accent: #b78a5c;
   --accent-hover: #d29b63;
   --accent-soft: #4c3b2f;
+  --transition: 0.25s ease;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,5 +46,6 @@
     --accent: #b78a5c;
     --accent-hover: #d29b63;
     --accent-soft: #4c3b2f;
+    --transition: 0.25s ease;
   }
 }

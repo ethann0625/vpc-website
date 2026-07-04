@@ -44,12 +44,12 @@
 #theme-toggle-animation-container::after {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   height: 0;
   width: 100%;
   background: var(--bg-alt);
-  transition: height 0.25s ease;
+  transition: height var(--transition);
   z-index: -1;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
