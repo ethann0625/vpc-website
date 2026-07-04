@@ -5,10 +5,8 @@
   align-items: center;
   box-sizing: border-box;
 
-  margin: 0;
-  font-size: 100%;
   width: 100%;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 2rem;
 
   background-color: var(--surface);
 }
@@ -16,50 +14,52 @@
 #nav-element-container {
   display: flex;
   align-items: center;
-  vertical-align: middle;
   gap: 0.5rem;
 }
 
 #site-title {
   position: relative;
-  padding: 0.2rem 0.5rem 0.2rem calc(0.5rem + 3px);
+  padding: 0.2rem 0.5rem 0.4rem calc(0.5rem + 3px);
   text-decoration: none;
   transition: border-left-color 0.25s ease;
 }
 
+#site-title:focus-visible,
 #site-title:hover {
   border-left-color: transparent;
 }
 
-#site-title::before {
+#site-title::before,
+#site-title::after {
   content: "";
   position: absolute;
-  top: 0;
+  background: var(--accent);
   left: 0;
+}
+
+#site-title::before {
+  top: 0;
   width: 3px;
   height: 100%;
-  background: var(--accent);
   transform-origin: bottom;
   transition: transform 0.25s ease;
 }
 
+#site-title:focus-visible::before,
 #site-title:hover::before {
   transform: scaleY(0);
 }
 
 #site-title::after {
-  content: "";
-  position: absolute;
   bottom: 0;
-  left: 0;
 
   width: 0;
   height: 3px;
-  background: var(--accent);
   transition: width 0.25s ease;
   border-left: 0;
 }
 
+#site-title:focus-visible::after,
 #site-title:hover::after {
   width: 100%;
 }
@@ -76,6 +76,7 @@
   text-decoration: none;
 }
 
+#site-title:focus-visible span,
 #site-title:hover span {
   color: var(--accent-hover);
 }
@@ -106,6 +107,7 @@
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
+.quick-link:focus-visible::after,
 .quick-link:hover::after {
   height: 100%;
 }
@@ -116,6 +118,7 @@
   color: var(--fg-alt);
 }
 
+.quick-link:focus-visible span,
 .quick-link:hover span {
   color: var(--surface);
 }
@@ -124,6 +127,7 @@
   color: var(--accent);
 }
 
+.quick-link.current span:focus-visible,
 .quick-link.current span:hover {
   color: var(--surface);
 }
