@@ -43,3 +43,11 @@
   height: 100%;
   width: 100%;
 }
+
+#content-columns-container {
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 1rem;
+}
