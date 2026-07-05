@@ -24,11 +24,6 @@
   transition: border-left-color var(--transition);
 }
 
-#site-title:focus-visible,
-#site-title:hover {
-  border-left-color: transparent;
-}
-
 #site-title::before,
 #site-title::after {
   content: "";
@@ -129,4 +124,8 @@
 .quick-link.current span:focus-visible,
 .quick-link.current span:hover {
   color: var(--surface);
+}
+
+#nav-menu {
+  display: none;
 }
