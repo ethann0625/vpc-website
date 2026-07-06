@@ -1,5 +1,5 @@
 #top-nav {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-regular);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,12 +98,12 @@
   background: var(--accent-hover);
   transition: height var(--transition);
   z-index: 0;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .quick-link:focus-visible::after,
 .quick-link:hover::after {
   height: 100%;
+  color: var(--surface);
 }
 
 .quick-link span {
