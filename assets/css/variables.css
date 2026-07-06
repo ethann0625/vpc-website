@@ -31,9 +31,6 @@
   --accent: #b78a5c;
   --accent-hover: #d29b63;
   --accent-soft: #4c3b2f;
-  --transition: 0.25s ease;
-  --shadow-regular: 0 6px 18px rgba(0, 0, 0, 0.2);
-  --border-regular: 2px solid var(--border);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,8 +47,5 @@
     --accent: #b78a5c;
     --accent-hover: #d29b63;
     --accent-soft: #4c3b2f;
-    --transition: 0.25s ease;
-    --shadow-regular: 0 6px 18px rgba(0, 0, 0, 0.2);
-    --border-regular: 2px solid var(--border);
   }
 }
