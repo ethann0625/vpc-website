@@ -10,7 +10,6 @@
   stroke-linejoin="round"
   id="sun-icon"
   class="icon lucide lucide-sun-icon lucide-sun"
-  display=none
 >
   <circle cx="12" cy="12" r="4" />
   <path d="M12 2v2" />
