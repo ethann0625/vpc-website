@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="/assets/css/styles.css">
         <script src="/assets/js/theme_toggle.js" defer></script>
+        <script src="/assets/js/settings.js" defer></script>
         <title>{{ page.title }}</title>
     </head>
     <body> 
@@ -13,9 +14,9 @@
         </div>
         {% include navigation.html %} 
         <div class="content-container">
-            {% include theme_toggle.html %}
             {{ content }}
         </div>
         {% include footer.html %}
+        {% include settings.html %}
     </body>
 </html>
