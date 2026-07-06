@@ -1,10 +1,12 @@
 const settingsButton = document.getElementById("settings-menu-button");
 const settingsContainer = document.getElementById("settings-container");
-const test = document.getElementById("test");
 
-settingsButton.addEventListener("click", (event) => {
-  event.stopPropagation();
-  settingsContainer.classList.toggle("hidden");
+settingsButton.addEventListener("click", () => {
+  if (settingsContainer.classList.contains("hidden")) {
+    settingsContainer.classList.remove("hidden");
+  } else {
+    settingsContainer.classList.add("hidden");
+  }
 });
 
 document.addEventListener("click", (event) => {
@@ -12,6 +14,12 @@ document.addEventListener("click", (event) => {
   const inButton = settingsButton.contains(event.target);
 
   if (!inMenu && !inButton) {
+    settingsContainer.classList.add("hidden");
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
     settingsContainer.classList.add("hidden");
   }
 });

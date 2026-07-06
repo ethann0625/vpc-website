@@ -1,18 +1,19 @@
 const root = document.documentElement;
 const toggleButton = document.getElementById("theme-toggle");
 const buttonLabel = document.getElementById("theme-toggle-label");
+const sunIcon = document.getElementById("sun-icon");
+const moonIcon = document.getElementById("moon-icon");
 
 function updateButton(theme) {
-  const sunIcon = document.getElementById("sun-icon");
-  const moonIcon = document.getElementById("moon-icon");
-  if (theme == "light") {
+  if (!theme) return;
+  if (theme == "dark") {
     sunIcon.style.display = "none";
     moonIcon.style.display = "block";
-    buttonLabel.textContent = "Light";
+    buttonLabel.textContent = "Dark";
   } else {
     sunIcon.style.display = "block";
     moonIcon.style.display = "none";
-    buttonLabel.textContent = "Dark";
+    buttonLabel.textContent = "Light";
   }
 }
 
