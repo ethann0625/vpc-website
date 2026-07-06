@@ -95,3 +95,7 @@ textarea {
 .icon:hover {
   color: var(--accent);
 }
+
+.hidden {
+  display: none;
+}

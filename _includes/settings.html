@@ -1,15 +1,18 @@
 <div id="settings-button-container">
-  <button id="settings-menu-button">{% include svg/settings-2.svg %}</button>
-    <div id="settings-container">
-      <span id="settings-title">Site Settings<hr></span>
-      <div class="settings-row">
-        <span class="settings-label">Theme</span>
-        <button class="settings-button" id="theme-toggle">
-          {% include svg/sun.svg %} {% include svg/moon.svg %}
-          <span class=button-label" id="theme-toggle-label">Test</span>
-        </button>
-      </div>
-      </div>
+  <button id="settings-menu-button">
+    {% include svg/settings-2.svg %}
+  </button>
+  <div id="settings-container" class="hidden">
+    <h2 class="settings-title">Site Settings</h2>
+    <hr class="settings-title">
+    <div class="settings-row">
+      <span class="settings-label">Theme</span>
+      <button class="settings-button" id="theme-toggle">
+        {% include svg/sun.svg %}
+        {% include svg/moon.svg %}
+        <span class="button-label" id="theme-toggle-label">Test</span>
+      </button>
     </div>
   </div>
 </div>
+<button id="test">test</button>
