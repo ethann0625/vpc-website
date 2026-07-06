@@ -1,37 +1,34 @@
 const root = document.documentElement;
-const toggleButton = document.getElementById("theme-toggle");
-const buttonLabel = document.getElementById("theme-toggle-label");
+const themeToggleButton = document.getElementById("theme-toggle");
+const themeButtonLabel = document.getElementById("theme-toggle-label");
 const sunIcon = document.getElementById("sun-icon");
 const moonIcon = document.getElementById("moon-icon");
 
-function updateButton(theme) {
+function updateThemeButton(theme) {
   if (!theme) return;
-  if (theme == "dark") {
-    sunIcon.style.display = "none";
-    moonIcon.style.display = "block";
-    buttonLabel.textContent = "Dark";
+  if (theme === "dark") {
+    themeButtonLabel.textContent = "Dark";
+    sunIcon.classList.add("hidden");
+    moonIcon.classList.remove("hidden");
   } else {
-    sunIcon.style.display = "block";
-    moonIcon.style.display = "none";
-    buttonLabel.textContent = "Light";
+    themeButtonLabel.textContent = "Light";
+    sunIcon.classList.remove("hidden");
+    moonIcon.classList.add("hidden");
   }
 }
 
 // Load from storage when DOM loads
-let currentTheme = localStorage.getItem("theme");
-if (currentTheme) {
-  root.setAttribute("data-theme", currentTheme);
-}
-updateButton(currentTheme);
+let currentTheme =
+  localStorage.getItem("theme") ??
+  (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+root.setAttribute("data-theme", currentTheme);
+updateThemeButton(currentTheme);
 
 // Theme button event listener
-toggleButton.addEventListener("click", () => {
-  currentTheme =
-    root.getAttribute("data-theme") ||
-    (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-
+themeToggleButton.addEventListener("click", () => {
   const newTheme = currentTheme === "dark" ? "light" : "dark";
-  updateButton(newTheme);
   localStorage.setItem("theme", newTheme);
   root.setAttribute("data-theme", newTheme);
+  updateThemeButton(newTheme);
 });

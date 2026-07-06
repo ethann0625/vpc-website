@@ -2,16 +2,24 @@
   <button id="settings-menu-button">
     {% include svg/settings-2.svg %}
   </button>
+
   <div id="settings-container" class="hidden">
     <h2 class="settings-title">Site Settings</h2>
     <hr class="settings-title">
-    <div class="settings-row">
+
+    <button class="settings-button" id="theme-toggle">
       <span class="settings-label">Theme</span>
-      <button class="settings-button" id="theme-toggle">
-        {% include svg/sun.svg %}
-        {% include svg/moon.svg %}
-        <span class="button-label" id="theme-toggle-label">Test</span>
-      </button>
-    </div>
+      {% include svg/sun.svg class="hidden" %}
+      {% include svg/moon.svg  class="hidden" %}
+      <span class="button-label" id="theme-toggle-label"></span>
+    </button>
+
+    <button class="settings-button" id="motion-toggle">
+      <span class="settings-label">Reduce Motion</span>
+      {% include svg/route.svg class="hidden" %}
+      {% include svg/route-off.svg class="hidden" %}
+      <span class="button-label" id="motion-toggle-label">On</span>
+    </button>
+
   </div>
 </div>
