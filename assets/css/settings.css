@@ -1,0 +1,82 @@
+#settings-button-container {
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+
+  position: fixed;
+  z-index: 9999;
+
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  right: max(1rem, env(safe-area-inset-right));
+}
+
+#settings-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  box-shadow: var(--shadow-regular);
+}
+
+#settings-menu-button:hover *,
+#settings-menu-button:hover {
+  border-color: var(--accent-hover);
+  color: var(--accent-hover);
+}
+
+#settings-container {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  right: 0;
+  padding: 0.75rem;
+
+  background-color: var(--surface);
+  border: var(--border-regular);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  gap: 0.5rem;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+#settings-title,
+.settings-label,
+.settings-button * {
+  font-family: "InterVariable", sans-serif;
+  font-weight: bold;
+  color: var(--fg-alt);
+  white-space: nowrap;
+}
+
+#settings-title hr {
+  height: 2px;
+}
+
+.settings-label {
+  border-right: 2px solid var(--border);
+  padding-right: 0.5rem;
+}
+
+.settings-button {
+  padding: 0.25rem;
+  border: var(--border-regular);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.settings-button:hover,
+.settings-button:hover * {
+  color: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
