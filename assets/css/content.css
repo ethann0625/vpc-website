@@ -13,8 +13,8 @@
   width: 40%;
 }
 
-.note p,
-.note a {
+p.note,
+a.note {
   font-size: 0.75rem;
   color: var(--border);
 }

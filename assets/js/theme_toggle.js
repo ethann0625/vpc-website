@@ -27,8 +27,8 @@ updateThemeButton(currentTheme);
 
 // Theme button event listener
 themeToggleButton.addEventListener("click", () => {
-  const newTheme = currentTheme === "dark" ? "light" : "dark";
-  localStorage.setItem("theme", newTheme);
-  root.setAttribute("data-theme", newTheme);
-  updateThemeButton(newTheme);
+  currentTheme = currentTheme === "dark" ? "light" : "dark";
+  localStorage.setItem("theme", currentTheme);
+  root.setAttribute("data-theme", currentTheme);
+  updateThemeButton(currentTheme);
 });

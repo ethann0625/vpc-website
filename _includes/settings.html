@@ -7,19 +7,21 @@
     <h2 class="settings-title">Site Settings</h2>
     <hr class="settings-title">
 
-    <button class="settings-button" id="theme-toggle">
-      <span class="settings-label">Theme</span>
-      {% include svg/sun.svg class="hidden" %}
-      {% include svg/moon.svg  class="hidden" %}
-      <span class="button-label" id="theme-toggle-label"></span>
-    </button>
+    <div id="settings-menu-items-container">
+        <button class="settings-button" id="theme-toggle">
+          <span class="settings-label">Theme</span>
+          {% include svg/sun.svg class="hidden" %}
+          {% include svg/moon.svg  class="hidden" %}
+          <span class="button-label" id="theme-toggle-label"></span>
+        </button>
 
-    <button class="settings-button" id="motion-toggle">
-      <span class="settings-label">Reduce Motion</span>
-      {% include svg/pause.svg class="hidden" %}
-      {% include svg/play.svg class="hidden" %}
-      <span class="button-label" id="motion-toggle-label">On</span>
-    </button>
+        <button class="settings-button" id="motion-toggle">
+          <span class="settings-label">Reduce Motion</span>
+          {% include svg/pause.svg class="hidden" %}
+          {% include svg/play.svg class="hidden" %}
+          <span class="button-label" id="motion-toggle-label">On</span>
+        </button>
+    </div>
 
   </div>
 </div>
