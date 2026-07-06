@@ -26,6 +26,7 @@ let reduceMotionEnabled =
     ? storedReduceMotionEnabled === "true"
     : window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+document.documentElement.classList.toggle("reduced-motion", reduceMotionEnabled);
 updateReduceMotionButton(reduceMotionEnabled);
 
 // Event listener
@@ -37,5 +38,6 @@ reduceMotionButton.addEventListener("click", (event) => {
     backgroundTile.unpauseAnimations();
   }
   updateReduceMotionButton(reduceMotionEnabled);
+  document.documentElement.classList.toggle("reduced-motion", reduceMotionEnabled);
   localStorage.setItem("reduceMotionEnabled", reduceMotionEnabled);
 });
