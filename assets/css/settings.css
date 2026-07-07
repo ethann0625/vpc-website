@@ -1,7 +1,6 @@
 #settings-button-container {
   display: flex;
   justify-content: center;
-  vertical-align: center;
 
   position: fixed;
   z-index: 9999;
@@ -69,12 +68,11 @@ h2.settings-title {
 }
 
 .settings-button {
-  padding: 0.25rem;
+  padding: 0.25rem 0.5rem;
   border: var(--border-regular);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  margin: 0 0.5rem;
 }
 
 .settings-button:hover,
