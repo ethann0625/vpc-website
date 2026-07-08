@@ -126,6 +126,18 @@
   color: var(--surface);
 }
 
-#nav-menu {
-  display: none;
+#hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hamburger-menu {
+  background-color: var(--surface);
+  padding: 2rem;
+}
+
+#hamburger-menu h2 {
+  font-family: "InterVariable";
+  font-weight: bold;
 }

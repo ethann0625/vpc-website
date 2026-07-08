@@ -3,6 +3,7 @@
     <a id="site-title" href="/"><span>Volunteer Performers'<br> Collective</span></a>
 
     <div id="nav-element-container">
+
   {% for item in site.data.navigation %}
   <a
     href="{{ item.link }}"
@@ -11,6 +12,25 @@
   <span>{{ item.name }}</span>
   </a>
   {% endfor %}
+
+  </div>
+  <div id="hamburger">
+      <button id="hamburger-menu-button">
+          {% include svg/menu.svg %}
+      </button>
   </div>
 </nav>
+
+<div id="hamburger-menu" class="hidden">
+  <h2>Quick Links</h2>
+  {% for item in site.data.navigation %}
+  <a
+    href="{{ item.link }}"
+    class="quick-link{% if page.url == item.link %} current{% endif %}"
+  >
+  <span>{{ item.name }}</span>
+  </a>
+  {% endfor %}
+
+</div>
 </header>
