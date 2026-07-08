@@ -133,7 +133,7 @@
 }
 
 #hamburger-menu {
-  background-color: var(--surface);
+  background-color: var(--bg-alt);
   padding: 2rem;
 }
 
