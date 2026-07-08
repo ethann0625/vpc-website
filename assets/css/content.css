@@ -48,9 +48,12 @@ a.note {
 #content-columns-container {
   padding: 0;
   display: grid;
-  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  grid-auto-flow: column;
+}
+
+#content-columns-container > .content-container:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
 }
 
 #content-columns-container h1,
