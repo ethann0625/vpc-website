@@ -62,3 +62,13 @@ a.note {
   text-align: center;
   border: none;
 }
+
+@media screen and (max-width: 768px) {
+  #content-columns-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  #image-hero {
+    grid-template-columns: 1fr;
+  }
+}
