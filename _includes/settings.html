@@ -1,5 +1,11 @@
+<noscript>
+  <style>
+    #settings-button-container { display: none; }
+  </style>
+</noscript>
+
 <div id="settings-button-container">
-  <button id="settings-menu-button">
+  <button id="settings-menu-button" aria-label="Settings Menu">
     {% include svg/settings-2.svg %}
   </button>
 
@@ -8,14 +14,14 @@
     <hr class="settings-title">
 
     <div id="settings-menu-items-container">
-        <button class="settings-button" id="theme-toggle">
+        <button class="settings-button" id="theme-toggle" aria-label="Theme Toggle">
           <span class="settings-label">Theme</span>
           {% include svg/sun.svg class="hidden" %}
           {% include svg/moon.svg  class="hidden" %}
           <span class="button-label" id="theme-toggle-label"></span>
         </button>
 
-        <button class="settings-button" id="motion-toggle">
+        <button class="settings-button" id="motion-toggle" aria-label="Reduced Motion Toggle">
           <span class="settings-label">Reduce Motion</span>
           {% include svg/pause.svg class="hidden" %}
           {% include svg/play.svg class="hidden" %}

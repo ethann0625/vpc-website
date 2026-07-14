@@ -1,3 +1,10 @@
+<noscript>
+  <style>
+    #nav-element-container { display: none; }
+    #hamburger { display: flex; }
+  </style>
+</noscript>
+
 <header>
 <nav id="top-nav">
     <a id="site-title" href="/"><span>Volunteer Performers'<br> Collective</span></a>
@@ -15,7 +22,7 @@
 
   </div>
   <div id="hamburger">
-      <button id="hamburger-menu-button">
+      <button id="hamburger-menu-button" aria-label="Hamburger Navigation Menu">
           {% include svg/menu.svg %}
       </button>
   </div>
