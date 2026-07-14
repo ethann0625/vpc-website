@@ -1,0 +1,77 @@
+#post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 0.5fr));
+}
+
+.post-card {
+  display: block;
+  position: relative;
+  background-color: var(--surface);
+  text-decoration: none;
+  overflow: hidden;
+  transition: box-shadow var(--transition);
+}
+
+.post-card:hover,
+.post-card:focus-visible {
+  box-shadow: var(--shadow-regular);
+  border: var(--border-regular);
+  border-color: var(--accent);
+}
+
+.post-card-image img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.post-card-image {
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.post-card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  gap: 0;
+  opacity: 0;
+  transition: opacity var(--transition);
+
+  display: flex;
+  align-items: center;
+}
+
+.post-card-content * {
+  line-height: 0.2rem;
+  font-size: 1rem;
+  border: none;
+  padding-left: 0;
+}
+
+.post-card-content h2 {
+  color: var(--accent-hover);
+}
+
+.post-card-content:hover,
+.post-card-content:focus-visible {
+  opacity: 1;
+}
+
+.post-card-content span {
+  padding-left: 0.5rem;
+  width: 100%;
+}
+
+.post-card-content:hover span {
+  background-color: var(--surface);
+}

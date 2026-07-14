@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="content-container">
+  <h1>Blog Posts/Past Performances</h1>
+</div>
+
+<div id="post-grid">
+  {% for post in site.posts %}
+  <a href="{{ post.url }}" class="post-card">
+    <div class="post-card-image">
+      <img src="{{ post.hero_image }}" alt="{{ post.hero_alt | default: '' }}" />
+    </div>
+    <div class="post-card-content">
+      <span>
+        <h2>{{ post.title }}</h2>
+        <p class="post-card-date">{{ post.date | date_to_string }}</p>
+      </span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
