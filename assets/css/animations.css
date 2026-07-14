@@ -17,3 +17,10 @@ html.reduced-motion *::after {
   transition-duration: 0.01ms !important;
   scroll-behavior: auto !important;
 }
+
+#bg-pattern {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  color: var(--bg-alt);
+}

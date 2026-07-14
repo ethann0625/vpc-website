@@ -12,19 +12,14 @@ body {
   flex-direction: column;
 }
 
-#bg-pattern {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  color: var(--bg-alt);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  #bg-pattern svg {
-    animation: none;
+@media screen and (max-width: 768px) {
+  body {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
-*/ a {
+
+a {
   color: var(--accent);
   font-size: 1rem;
 }
@@ -33,8 +28,8 @@ button {
   font-family: Georgia, serif;
 
   background-color: var(--surface);
-  color: None;
-  border-style: None;
+  color: transparent;
+  border: none;
 }
 
 hr {

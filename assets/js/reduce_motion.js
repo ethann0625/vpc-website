@@ -25,7 +25,7 @@ function applyReducedMotion(enabled) {
   } else {
     backgroundTile.unpauseAnimations();
   }
-  document.documentElement.classList.toggle("reduced-motion", reduceMotionEnabled);
+  document.documentElement.classList.toggle("reduced-motion", enabled);
 }
 
 // Initialize value & update button

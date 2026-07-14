@@ -1,0 +1,13 @@
+#footer {
+  text-align: center;
+}
+
+#footer hr {
+  width: 40%;
+}
+
+p.note,
+a.note {
+  font-size: 0.75rem;
+  color: var(--border);
+}
