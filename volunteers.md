@@ -67,6 +67,9 @@ If you have any questions, please contact us at
 Please note that you will have to supply your own musical equipment
 (instruments, amplifiers, etc.,) if you are an instrumentalist.
 
-<center>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_y1NPuYVuoXvc9Ns2BDcw9yk-RDRaiHiD0071XxYFHJ0HGg/viewform?embedded=true" width="75%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</center>
+<div style="display: flex; align-items:center justify-content: center;">
+<iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSc_y1NPuYVuoXvc9Ns2BDcw9yk-RDRaiHiD0071XxYFHJ0HGg/viewform?embedded=true"
+    style="width:100%; height:80vh; border:none;">
+</iframe>
+</div>
