@@ -16,6 +16,8 @@
   --transition: 0.25s ease;
   --shadow-regular: 0 6px 18px rgba(0, 0, 0, 0.2);
   --border-regular: 2px solid var(--border);
+
+  --content-max-width: 65rem;
 }
 
 :root[data-theme="dark"] {
