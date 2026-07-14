@@ -7,24 +7,27 @@
     <div id="bg-pattern">{% include svg/background_tile.svg %}</div>
     {% include navigation.html %}
 
-    <div class="content-container" id="image-hero">
-      <div class="hero-title-container">
-        <h1 id="hero-title"><span>{{ page.hero_title }}</span></h1>
-      </div>
-      <div class="hero-image-container">
-        {% if page.hero_image %}
-        <img src="{{ page.hero_image }}" alt="{{ page.hero_alt | default: '' }}" />
-        {% endif %}
-      </div>
-    </div>
-    <div id="content-columns-container">
-      {% assign sections = content | split: '<!--split-->' %}
-        {% for section in sections %}
-        <div class="content-container">
-            {{ section }}
+    <main>
+      <div class="content-container" id="image-hero">
+        <div class="hero-title-container">
+          <h1 id="hero-title"><span>{{ page.hero_title }}</span></h1>
         </div>
-        {% endfor %}
-    </div>
+        <div class="hero-image-container">
+          {% if page.hero_image %}
+          <img src="{{ page.hero_image }}" alt="{{ page.hero_alt | default: '' }}" />
+          {% endif %}
+        </div>
+      </div>
+      <div id="content-columns-container">
+        {% assign sections = content | split: '<!--split-->' %}
+          {% for section in sections %}
+          <div class="content-container">
+              {{ section }}
+          </div>
+          {% endfor %}
+      </div>
+    </main>
+
     {% include footer.html %}
     {% include settings.html %}
   </body>
