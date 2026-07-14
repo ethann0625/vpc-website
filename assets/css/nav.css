@@ -112,18 +112,15 @@
   color: var(--fg-alt);
 }
 
-.quick-link:focus-visible span,
-.quick-link:hover span {
+.quick-link.current:hover span,
+.quick-link.current:focus-visible span,
+.quick-link:hover span,
+.quick-link:focus-visible span {
   color: var(--surface);
 }
 
 .quick-link.current span {
   color: var(--accent);
-}
-
-.quick-link.current span:focus-visible,
-.quick-link.current span:hover {
-  color: var(--surface);
 }
 
 #hamburger {
