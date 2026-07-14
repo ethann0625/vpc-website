@@ -20,7 +20,9 @@
     <div id="content-columns-container">
       {% assign sections = content | split: '<!--split-->' %}
         {% for section in sections %}
-        <div class="content-container">{{ section }}</div>
+        <div class="content-container">
+            {{ section }}
+        </div>
         {% endfor %}
     </div>
     {% include footer.html %}
