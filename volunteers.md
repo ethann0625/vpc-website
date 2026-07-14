@@ -4,6 +4,7 @@ title: Join Us
 hero_title: Join Us
 hero_image: /assets/images/2025_08_15_Bethany_1.jpg
 hero_alt: Hero Image
+permalink: /volunteers/
 ---
 
 ## Volunteer Information

@@ -4,6 +4,7 @@ title: About
 hero_title: About Us
 hero_image: /assets/images/2025_06_21_Venvi_1.jpg
 hero_alt: Hero Image
+permalink: /about/
 ---
 
 ## Who Are We?
@@ -26,3 +27,14 @@ care facilities in Northwest Calgary. At each performance, we typically play
 a short setlist of jazz or traditional pop songs for any who may want to listen.
 However, in the future, we plan on doing more general music-related volunteering
 in our community.
+
+<!--split-->
+
+## How Can I Get Involved?
+
+---
+
+As a group, we are always looking for more volunteers! If you think you might be
+interested, consider checking out [our volunteer page]({% link volunteers.md %}).
+Our performances are a very low-stakes and casual environment, and we will always
+welcome new volunteers, regardless of experience level or skill!
