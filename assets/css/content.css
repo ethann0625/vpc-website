@@ -58,3 +58,47 @@
     grid-template-columns: 1fr;
   }
 }
+
+.corner-brackets {
+  --s: 10px;
+  --t: 2px;
+  --g: 10px;
+
+  padding: calc(var(--g) + var(--t));
+  outline: var(--t) solid var(--accent);
+  outline-offset: calc(-1 * var(--t));
+  mask:
+    conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 / calc(100% - var(--s))
+      calc(100% - var(--s)),
+    conic-gradient(#000 0 0) content-box;
+  transition: var(--transition);
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.corner-brackets:hover {
+  outline-offset: calc(-1 * var(--g));
+}
+
+.corner-brackets p {
+  text-align: center;
+}
+
+#mission-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+#mission-links-container a {
+  text-align: center;
+}
+
+.content-container.corner-brackets {
+  margin: 0;
+  padding: 0;
+}

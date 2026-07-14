@@ -12,7 +12,7 @@ permalink: /about/
 ---
 
 We are a small volunteer group based in **Calgary, Alberta, Canada**. As a
-group, our main goals are to \*\*share our love of music while also giving back to
+group, our main goals are to share our love of music while also giving back to
 our community. Typically, this comes in the form of our main activity as a
 group.
 
