@@ -50,11 +50,3 @@ Typically, we organize our performance schedule monthly. If you would like us to
 perform at your facility, see [our contact page]({% link contact.html %}) for a list
 of ways to contact us. Our performances are, and always will be completely free of
 charge!
-
-<!--split-->
-
-## About Our Performances
-
----
-
-Each of our performances are between 35-50 minutes in duration.
