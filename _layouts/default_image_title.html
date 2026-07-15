@@ -21,7 +21,14 @@
           {% endif %}
         </div>
       </div>
-      <div class="content-container">{{ content }}</div>
+      <div class="content-container">
+          {% if page.author %}
+          <p class="note">Written by {{ page.author }} |
+          {{ page.date | date_to_long_string }}</p>
+          <hr />
+          {% endif %}
+        {{ content }}
+      </div>
     </main>
     {% include footer.html %}
     {% include settings.html %}
