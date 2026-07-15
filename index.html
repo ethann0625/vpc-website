@@ -45,7 +45,7 @@ permalink: /
   </div>
 
     <div class="content-container" id="latest-post-container">
-      <h2>Latest Post/Performance</h2>
+      <h2><span>Latest Post/Performance</span></h2>
       {% for post in site.posts limit:1 %}
         <a href={{ post.url }} id="latest-post-link" class="post-card">
           <div id="latest-post-card" class="post-card-image">
@@ -66,6 +66,7 @@ permalink: /
 
 <div class="content-container">
   <h2>More Recent Blog Posts/Performances</h2>
+  <p>Coming soon!</p>
 
   <div id="post-grid">
     {% for post in site.posts limit:3 offset:1 %}
@@ -74,10 +75,10 @@ permalink: /
           <img src="{{ post.hero_image }}" alt="{{ post.hero_alt | default: '' }}" />
         </div>
         <div class="post-card-content">
-          <span>
+          <div class="post-text-container">
             <h2>{{ post.title }}</h2>
             <p class="post-card-date">{{ post.date | date_to_string }}</p>
-          </span>
+          </div>
         </div>
       </a>
     {% endfor %}

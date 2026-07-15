@@ -15,10 +15,10 @@ permalink: /blog/
       <img src="{{ post.hero_image }}" alt="{{ post.hero_alt | default: '' }}" />
     </div>
     <div class="post-card-content">
-      <span>
+      <div class="post-text-container">
         <h2>{{ post.title }}</h2>
         <p class="post-card-date">{{ post.date | date_to_string }}</p>
-      </span>
+      </div>
     </div>
   </a>
   {% endfor %}
