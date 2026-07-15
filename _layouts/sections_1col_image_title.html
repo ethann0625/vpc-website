@@ -19,7 +19,7 @@
 
         <div class="hero-image-container">
           {% if page.hero_image %}
-          <img src="{{ page.hero_image }}" alt="{{ page.hero_alt | default: '' }}" />
+            <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt }}">
           {% endif %}
         </div>
       </div>
