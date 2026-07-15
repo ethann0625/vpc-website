@@ -7,14 +7,14 @@
 
 <header>
 <nav id="top-nav">
-  <a id="site-title" href="{{ '/' | relative_url }}""><span>Volunteer Performers'<br> Collective</span></a>
+  <a id="site-title" href="{{ '/' | relative_url }}"><span>Volunteer Performers'<br> Collective</span></a>
 
     <div id="nav-element-container">
 
   {% for item in site.data.navigation %}
   <a
     href="{{ item.link | relative_url }}"
-    class="quick-link{% if page.url == item.link | relative_url %} current{% endif %}"
+    class="quick-link{% if page.url == item.link %} current{% endif %}"
   >
   <span>{{ item.name }}</span>
   </a>
@@ -33,7 +33,7 @@
   {% for item in site.data.navigation %}
   <a
     href="{{ item.link | relative_url }}"
-    class="quick-link{% if page.url == item.link | relative_url %} current{% endif %}"
+    class="quick-link{% if page.url == item.link %} current{% endif %}"
   >
   <span>{{ item.name }}</span>
   </a>
