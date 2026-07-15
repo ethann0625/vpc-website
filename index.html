@@ -14,55 +14,60 @@ permalink: /
 <div class="content-container">
   <div class="corner-brackets">
     <p>
-    Started June 2025 by two friends with a passion for music, the Volunteer
-    Performers Collective was created with the hopes of bringing others with the
-    same passion for music to places in need of entertainment! We provide youth
-    with opportunities to deepen their interest in music in a supportive casual
-    environment while doing something for their community on the side.
-  </p>
-  <div id="mission-links-container">
-    <a href="/about/" class="quick-link"><span>More About Us<span></a>
-    <a href="/contact/" class="quick-link"><span>Contact Us<span></a>
-    <a href="/volunteers/" class="quick-link"><span>Join Us<span></a>
-  </div>
+      Started June 2025 by two friends with a passion for music, the Volunteer Performers Collective
+      was created with the hopes of bringing others with the same passion for music to places in
+      need of entertainment! We provide youth with opportunities to deepen their interest in music
+      in a supportive casual environment while doing something for their community on the side.
+    </p>
+    <div id="mission-links-container">
+      <a href="{{ '/about/' | relative_url }}" class="quick-link"><span>More About Us</span></a>
+      <a href="{{ '/contact/' | relative_url }}" class="quick-link"><span>Contact Us</span></a>
+      <a href="{{ '/volunteers/' | relative_url }}" class="quick-link"><span>Join Us</span></a>
+    </div>
   </div>
 </div>
 
 <div class="content-columns-container">
   <div class="content-container video-container">
-
-  <iframe
-    src="https://www.youtube.com/embed/gnxH3Mfbp9k?si=K70mH2JO1oLqyfP7"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    style="width: min(80%, 36rem); aspect-ratio: 14 / 8;"
-    allowfullscreen></iframe>
-  <hr />
-  <p class="note">A solo over "Autumn Leaves" - Taken from one of our first performances</p>
-  
+    <iframe
+      src="https://www.youtube.com/embed/gnxH3Mfbp9k?si=K70mH2JO1oLqyfP7"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      style="width: min(80%, 36rem); aspect-ratio: 14 / 8"
+      allowfullscreen
+    ></iframe>
+    <hr />
+    <p class="note">A solo over "Autumn Leaves" - Taken from one of our first performances</p>
   </div>
 
-    <div class="content-container" id="latest-post-container">
-      <h2><span>Latest Post/Performance</span></h2>
-      {% for post in site.posts limit:1 %}
-        <a href="{{ post.url | relative_url }}" id="latest-post-link" class="post-card">
-          <div id="latest-post-card" class="post-card-image">
-            <img id="latest-post-card-image" src={{ post.hero_image | relative_url }} />
-          </div>
+  <div class="content-container" id="latest-post-container">
+    <h2><span>Latest Post/Performance</span></h2>
+    {% for post in site.posts limit:1 %}
+    <a href="{{ post.url | relative_url }}" id="latest-post-link" class="post-card">
+      <div id="latest-post-card" class="post-card-image">
+        <img id="latest-post-card-image" src="{{" post.hero_image | relative_url }} />
+      </div>
 
-        <div class="post-card-content">
-          <span>
-            <h2>{{ post.title }}</h2>
-            <p class="post-card-date">{{ post.date | date_to_string }}</p>
-          </span>
-        </div>
-
-        </a>
-      {% endfor %}
-    </div>
+      <div class="post-card-content">
+        <span>
+          <h2>{{ post.title }}</h2>
+          <p class="post-card-date">{{ post.date | date_to_string }}</p>
+        </span>
+      </div>
+    </a>
+    {% endfor %}
   </div>
+</div>
 
 <div class="content-container">
   <h2>More Recent Blog Posts/Performances</h2>
@@ -70,18 +75,17 @@ permalink: /
 
   <div id="post-grid">
     {% for post in site.posts limit:3 offset:1 %}
-      <a href="{{ post.url | relative_url }}" class="post-card">
-        <div class="post-card-image">
-          <img src="{{ post.hero_image | relative_url }}" alt="{{ post.hero_alt | default: '' }}" />
+    <a href="{{ post.url | relative_url }}" class="post-card">
+      <div class="post-card-image">
+        <img src="{{ post.hero_image | relative_url }}" alt="{{ post.hero_alt | default: '' }}" />
+      </div>
+      <div class="post-card-content">
+        <div class="post-text-container">
+          <h2>{{ post.title }}</h2>
+          <p class="post-card-date">{{ post.date | date_to_string }}</p>
         </div>
-        <div class="post-card-content">
-          <div class="post-text-container">
-            <h2>{{ post.title }}</h2>
-            <p class="post-card-date">{{ post.date | date_to_string }}</p>
-          </div>
-        </div>
-      </a>
+      </div>
+    </a>
     {% endfor %}
   </div>
 </div>
-
