@@ -10,9 +10,9 @@ permalink: /blog/
 
 <div id="post-grid">
   {% for post in site.posts %}
-  <a href="{{ post.url }}" class="post-card">
+  <a href="{{ post.url | relative_url }}" class="post-card">
     <div class="post-card-image">
-      <img src="{{ post.hero_image }}" alt="{{ post.hero_alt | default: '' }}" />
+      <img src="{{ post.hero_image | relative_url }}" alt="{{ post.hero_alt | default: '' }}" />
     </div>
     <div class="post-card-content">
       <div class="post-text-container">
