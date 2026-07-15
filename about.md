@@ -35,7 +35,7 @@ music-related volunteering in our community.
 ---
 
 As a group, we are always looking for more volunteers! If you think you might be
-interested, consider checking out [our volunteer page]({% link volunteers.md
+interested, consider checking out [our volunteer page]({{ site.baseurl }}{% link volunteers.md
 %}). Our performances are a very **low-stakes and casual** environment, and we
 will always welcome new volunteers, **regardless of experience level or skill**!
 Both vocalists and instrumentalists are welcome!
@@ -47,6 +47,6 @@ Both vocalists and instrumentalists are welcome!
 ---
 
 Typically, we organize our performance schedule **monthly**. If you would like us to
-perform at your facility, see [our contact page]({% link contact.html %}) for a
+perform at your facility, see [our contact page]({{ site.baseurl }}{% link contact.html %}) for a
 list of ways to contact us. Our performances are, and always will be
 **completely free of charge!**
