@@ -55,14 +55,21 @@ permalink: /
     {% for post in site.posts limit:1 %}
     <a href="{{ post.url | relative_url }}" id="latest-post-link" class="post-card">
       <div id="latest-post-card" class="post-card-image">
-        <img id="latest-post-card-image" src="{{" post.hero_image | relative_url }} />
+        <img
+          id="latest-post-card-image"
+          src="{{ post.hero_image | relative_url }}"
+          post.hero_image
+          |
+          relative_url
+          }}
+        />
       </div>
 
       <div class="post-card-content">
-        <span>
+        <div class="post-text-container">
           <h2>{{ post.title }}</h2>
           <p class="post-card-date">{{ post.date | date_to_string }}</p>
-        </span>
+        </div>
       </div>
     </a>
     {% endfor %}
