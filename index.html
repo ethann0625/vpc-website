@@ -28,8 +28,59 @@ permalink: /
   </div>
 </div>
 
+<div class="content-columns-container">
+  <div class="content-container video-container">
+
+  <iframe
+    src="https://www.youtube.com/embed/gnxH3Mfbp9k?si=K70mH2JO1oLqyfP7"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    style="width: min(80%, 36rem); aspect-ratio: 14 / 8;"
+    allowfullscreen></iframe>
+  <hr />
+  <p class="note">A solo over "Autumn Leaves" - Taken from one of our first performances</p>
+  
+  </div>
+
+    <div class="content-container" id="latest-post-container">
+      <h2>Latest Post/Performance</h2>
+      {% for post in site.posts limit:1 %}
+        <a href={{ post.url }} id="latest-post-link" class="post-card">
+          <div id="latest-post-card" class="post-card-image">
+            <img id="latest-post-card-image" src={{ post.hero_image }} />
+          </div>
+
+        <div class="post-card-content">
+          <span>
+            <h2>{{ post.title }}</h2>
+            <p class="post-card-date">{{ post.date | date_to_string }}</p>
+          </span>
+        </div>
+
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+
 <div class="content-container">
-  <h2>Recent Blog Posts/Performances</h2>
-  <p>Coming soon!</p>
-  {% for post in site.posts limit:3 %} TODO: Show Most Recent Post {% endfor %}
+  <h2>More Recent Blog Posts/Performances</h2>
+
+  <div id="post-grid">
+    {% for post in site.posts limit:3 offset:1 %}
+      <a href="{{ post.url }}" class="post-card">
+        <div class="post-card-image">
+          <img src="{{ post.hero_image }}" alt="{{ post.hero_alt | default: '' }}" />
+        </div>
+        <div class="post-card-content">
+          <span>
+            <h2>{{ post.title }}</h2>
+            <p class="post-card-date">{{ post.date | date_to_string }}</p>
+          </span>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
 </div>
+
