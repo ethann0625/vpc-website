@@ -103,6 +103,12 @@
   width: min(21rem, 70%);
   aspect-ratio: 14 / 8;
   margin: 0 auto;
+  border: var(--border-regular);
+  border-color: transparent;
+}
+
+#latest-post-link:hover {
+  border-color: var(--accent);
 }
 
 #latest-post-card {
