@@ -62,8 +62,8 @@ name as a group, and since it was primarily just Josh and me volunteering as a
 pair, the recreation coordinators at the care facilities that we volunteered at
 would often come up with names for our group. One of the names they came up
 with, which we found particularly amusing, was "Music with Josh and Ethan."
-Sadly, I could not find a copy of the photo that we took of the program schedule
-for that day, so I had to go with this one.
+Sadly, I do not believe that we took a photo of the whiteboard where this was
+written.
 
 Looking back, helping to run this volunteer group has been an awesome
 experience; all the people involved (the recreation coordinators, the residents of
