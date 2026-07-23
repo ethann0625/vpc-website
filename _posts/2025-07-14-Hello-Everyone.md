@@ -46,7 +46,7 @@ its own blog post later on.
 1. **November 13, 2025** - Dulcina Hospice
 1. **December 22, 2025** - Dulcina Hospice
 1. **December 22, 2025** - Holy Cross Manor (yes, we did two in one day -- we're
-   awesome!)
+   awesome)
 1. **February 15, 2026** - Venvi The Edgemont
 1. **February 21, 2026** - Bethany Harvest Hills
 1. **February 22, 2026** - Scenic Acres Retirement Home
