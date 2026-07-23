@@ -66,7 +66,7 @@ Sadly, I could not find a copy of the photo that we took of the program schedule
 for that day, so I had to go with this one.
 
 Looking back, helping to run this volunteer group has been an awesome
-experience; everybody involved (the recreation coordinators, the residents of
-the care facilities, and all of the volunteers) has been so supportive and
+experience; all the people involved (the recreation coordinators, the residents of
+the care facilities, and all of the volunteers) have been so supportive and
 wonderful to work with overall. I look forward to this new chapter in our
 group's activities.
