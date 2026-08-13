@@ -2,12 +2,12 @@
 layout: default
 title: Home
 permalink: /
+hero_title: About Us
+hero_image: /assets/images/2025_06_21_Venvi_1.jpg
+hero_alt: Hero Image
 ---
 
-<div class="content-container">
-  <h1 id="hero-title">Home</h1>
-</div>
-
+<hr />
 <div class="content-container">
   <div class="corner-brackets">
     <p>
@@ -17,7 +17,7 @@ permalink: /
       environment while also giving back to the community.
     </p>
     <div id="mission-links-container">
-      <a href="{{ '/about/' | relative_url }}" class="quick-link"><span>More About Us</span></a>
+      <a href="#about" class="quick-link"><span>More About Us</span></a>
       <a href="{{ '/contact/' | relative_url }}" class="quick-link"><span>Contact Us</span></a>
       <a href="{{ '/volunteers/' | relative_url }}" class="quick-link"><span>Join Us</span></a>
     </div>
@@ -73,11 +73,74 @@ permalink: /
   </div>
 </div>
 
+<hr />
+
+<div class="content-container" id="image-hero">
+  <div class="hero-title-container">
+    <h1 id="about"><span>{{ page.hero_title }}</span></h1>
+  </div>
+  <div class="hero-image-container">
+    {% if page.hero_image %}
+    <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt }}" />
+    {% endif %}
+  </div>
+</div>
+
+<div class="content-columns-container">
+  <div class="content-container">
+    <h2>Who Are We?</h2>
+    <hr />
+    <p>
+      We are a small volunteer group based in <b>Calgary, Alberta, Canada</b>. As a group, our main
+      goals are to share our love of music while also giving back to our community. Typically, this
+      comes in the form of our main activity as a group.
+    </p>
+  </div>
+
+  <div class="content-container">
+    <h2>What Do We Do?</h2>
+    <hr />
+    <p>
+      Currently, our main activity consists of <b>volunteer performances</b> at various care
+      facilities in Northwest Calgary. At each performance, we typically play a short setlist of
+      <b>jazz or traditional pop</b> songs for residents, staff, and anyone who would like to
+      listen. In the future, we plan on doing more general music-related volunteering in our
+      community.
+    </p>
+  </div>
+  <div class="content-container">
+    <h2>What Do We Do?</h2>
+    <hr />
+    <p>
+      As a group, we are always looking for more volunteers! If you think you might be interested,
+      consider checking out
+      <a href="{{ site.baseurl }}{% link volunteers.md %}">our volunteer page</a>. Our performances
+      are a very <b>low-stakes and casual</b> environment, and we will always welcome new
+      volunteers, <b>regardless of experience level or skill</b>! Both vocalists and
+      instrumentalists are welcome!
+    </p>
+  </div>
+
+  <div class="content-container">
+    <h2>Interested In Hosting Us?</h2>
+    <hr />
+
+    <p>
+      Typically, we organize our performance schedule <b>monthly</b>. If you would like us to
+      perform at your facility, see
+      <a href="{{ site.baseurl }}{% link contact.html %}"> our contact page</a> for a list of ways
+      to contact us. Our performances are, and always will be <b>completely free of charge!</b>
+    </p>
+  </div>
+</div>
+
+<hr />
+
 <div class="content-container">
-  <h2>More Recent Blog Posts/Performances</h2>
+  <h2>Recent Blog Posts/Performances</h2>
 
   <div id="post-grid">
-    {% for post in site.posts limit:3 offset:1 %}
+    {% for post in site.posts limit:3 %}
     <a href="{{ post.url | relative_url }}" class="post-card">
       <div class="post-card-image">
         <img src="{{ post.hero_image | relative_url }}" alt="{{ post.hero_alt | default: '' }}" />
