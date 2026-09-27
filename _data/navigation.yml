@@ -1,7 +1,7 @@
 - name: Home
   link: /
-- name: Blog
-  link: /blog/
+- name: Activity Log
+  link: /log/
 - name: Contact Us
   link: /contact/
 - name: Join Us

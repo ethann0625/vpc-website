@@ -58,10 +58,7 @@ hero_alt: Hero Image
         <img
           id="latest-post-card-image"
           src="{{ post.hero_image | relative_url }}"
-          post.hero_image
-          |
-          relative_url
-          }}
+          alt="{{ post.hero_alt | default: '' }}"
         />
       </div>
 
@@ -113,7 +110,7 @@ hero_alt: Hero Image
     </p>
   </div>
   <div class="content-container">
-    <h2>What Do We Do?</h2>
+    <h2>Want To Join Us?</h2>
     <hr />
     <p>
       As a group, we are always looking for more volunteers! If you think you might be interested,
@@ -141,7 +138,7 @@ hero_alt: Hero Image
 <hr />
 
 <div class="content-container">
-  <h2>Recent Blog Posts/Performances</h2>
+  <h2>Recent Posts/Performances</h2>
 
   <div id="post-grid">
     {% for post in site.posts limit:3 %}

@@ -53,20 +53,3 @@ its own blog post later on.
 1. **June 6, 2026** - Scenic Acres Retirement Home
 1. **June 13, 2026** - St. Marguerite Manor
 1. **June 28, 2026** - Venvi The Edgemont
-
-## What's With the Thumbnail?
-
-The photo used as the thumbnail image for this blog post was taken pretty early
-on in our volunteering; we hadn't even come up with a name yet. Since we had no
-name as a group, and since it was primarily just Josh and me volunteering as a
-pair, the recreation coordinators at the care facilities that we volunteered at
-would often come up with names for our group. One of the names they came up
-with, which we found particularly amusing, was "Music with Josh and Ethan."
-Sadly, I do not believe that we took a photo of the whiteboard where this was
-written.
-
-Looking back, helping to run this volunteer group has been an awesome
-experience; all the people involved (the recreation coordinators, the residents of
-the care facilities, and all of the volunteers) have been so supportive and
-wonderful to work with overall. I look forward to this new chapter in our
-group's activities.
