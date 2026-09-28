@@ -1,6 +1,7 @@
 ---
 layout: default_container
 title: Licensing
+permalink: /licensing/
 ---
 
 # Third-party Licenses
