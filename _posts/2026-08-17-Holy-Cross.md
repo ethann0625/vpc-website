@@ -1,7 +1,7 @@
 ---
 layout: default_image_title
-title: PLC Performance
-hero_title: PLC Performance
+title: Holy Cross Manor Performance
+hero_title: Holy Cross Manor Performance
 hero_image: /assets/images/2026_08_17_Holy_Cross_1.png
 hero_alt: Holy Cross Manor Performance
 author: Josh
