@@ -1,6 +1,11 @@
-#post-grid {
+.post-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 0.5fr));
+}
+
+#recent-posts {
+  grid-template-columns: repeat(auto-fit, 8rem);
+  justify-content: center;
 }
 
 .post-card {

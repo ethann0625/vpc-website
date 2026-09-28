@@ -140,7 +140,7 @@ hero_alt: Hero Image
 <div class="content-container">
   <h2>Recent Posts/Performances</h2>
 
-  <div id="post-grid">
+  <div class="post-grid" id="recent-posts">
     {% for post in site.posts limit:3 %}
     <a href="{{ post.url | relative_url }}" class="post-card">
       <div class="post-card-image">
